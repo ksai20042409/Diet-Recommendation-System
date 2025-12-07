@@ -1,0 +1,108 @@
+/* Custom project styles (loaded after Tailwind)
+   Use this file to add overrides or small component tweaks.
+*/
+
+:root {
+  --brand-blue: #2563eb;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Example tweak: make ResultCard content a bit more readable */
+.result-card-content p {
+  line-height: 1.6;
+}
+
+/* Small utility for centering a full-height container */
+.full-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* General UI tokens */
+:root {
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --radius: 0.75rem;
+}
+
+/* Header tweaks */
+header.bg-white {
+  border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+.btn-primary {
+  background-color: var(--brand-blue);
+  color: white;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(15,23,42,0.08);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"],
+textarea {
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.08);
+  border-color: rgba(37,99,235,0.8);
+}
+
+/* Cards and panels */
+.panel {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* BMI scale card tweaks (used by BmiCalculator) */
+.bmi-scale-card {
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.bmi-scale-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(15,23,42,0.08);
+}
+
+/* Deficiency checkbox labels */
+label[role="deficiency"] {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .4rem .6rem;
+  border-radius: .5rem;
+  background: rgba(99,102,241,0.04);
+  border: 1px solid rgba(99,102,241,0.06);
+}
+
+/* ResultCard tweaks */
+.prose p {
+  color: #374151; /* text-slate-700 */
+}
+.prose h2, .prose h3 {
+  color: #111827;
+}
+
+/* Small utility classes */
+.muted { color: var(--muted); }
+.caps { text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; }

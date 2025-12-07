@@ -1,0 +1,5 @@
+{
+  "name": "AI-Powered Diet & Health Advisor",
+  "description": "An intelligent web application that calculates your BMI to provide personalized diet recommendations and offers a preliminary analysis of eye fundus images for potential signs of diabetic retinopathy, all powered by the Gemini API.",
+  "requestFramePermissions": []
+}
